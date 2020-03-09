@@ -7,11 +7,15 @@
 
 # Process events from Pipedream SSE streams in Node.js
 
+## Prerequisites
+
+- [Install the `pd` CLI](https://docs.pipedream.com/cli/install/)
+- [Sign up for a Pipedream account](https://docs.pipedream.com/cli/login/#signing-up-for-pipedream-via-the-cli)
+- [Create your first event source](https://github.com/PipedreamHQ/pipedream/blob/master/apps/http/README.md#quickstart)
+
 ## Quickstart
 
-First, [install Node.js](https://nodejs.org/en/download/).
-
-Then, clone this repo, `cd` into the cloned directory, and run
+Clone this repo, `cd` into the cloned directory, and run
 
 ```bash
 npm i
