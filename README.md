@@ -43,17 +43,15 @@ node index.js
 You'll see a confirmation that you're connected to the right URL, then the script will wait for you to send new events to your source:
 
 ```text
-λ ~/pipedream/node-sse-example/ master* node index.js
+λ node index.js
 Connected to https://rt.pipedream.com/sse/dc/dc_rmXuqV/emits. Listening for new events...
-
 ```
 
 In another shell, trigger a new event in your source (for example, send an HTTP request to its endpoint — run `pd describe <source>` to get its endpoint URL), and the script should print it.
 
-## Modify the code to process the event in a custom way.
+## Modify the code to process events in a custom way
 
 This code in `index.js` processes the event:
-
 
 ```javascript
 es.onmessage = event => {
@@ -61,7 +59,7 @@ es.onmessage = event => {
 };
 ```
 
-Just modify this function to parse and process the event in whatever way you'd like.
+Just modify the code within this function to parse and process the event in whatever way you'd like.
 
 ## Questions?
 
